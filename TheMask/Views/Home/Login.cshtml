@@ -1,10 +1,13 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
 <head>
     <style>
 
+        .mask {
+            height: 100px;
+            width: 100px;
+        }
+
         .login-container {
-            margin-top: 10px;
             background-color: #E7DFD8;
             padding: 20px;
             border-radius: 10px;
@@ -14,6 +17,7 @@
             flex-direction: column;
             align-items: center;
             border: 2px dotted black;
+            margin-top: 100px
         }
 
         input[type="text"], input[type="password"] {
@@ -48,25 +52,24 @@
             border-radius: 10px;
         }
 
+        #HDR {
+            font-family: Borsok;
+        }
+
     </style>
 </head>
-    <body style="background-color: #E7DFD8;">
-        <div class="login-container">
-            <h2>Embrace The Mask</h2>
-            <br>
-            <form>
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Confirm Password" required>
-                <input type="email" placeholder="E-mail" required>
-                <div class="button-container">
-                    <button class="sign-up-button" type="submit"><b>Sign Up</b></button>
-                </div>
-            </form>
-        </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+<body style="background-color: #E7DFD8;">
+    <div class="login-container">
+        <h2 id="HDR" style="font-size: 50px; color:#d17724; font-weight: lighter;">Embrace The Mask</h2>
+        <br>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <div class="button-container">
+                <button class="login-button"><b>Login</b></button>
+                <button class="sign-up-button"><b>Sign Up</b></button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
